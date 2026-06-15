@@ -206,6 +206,7 @@
   padding: 4rem 6rem;
   z-index: 100;
   border-radius: 10px;
+  transition: 0.4s all;
 }
 
 .modal--header {
@@ -244,9 +245,9 @@
 
 .modal--form input,
 select {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
-  padding: 0.3rem 0.5rem;
+  padding: 0.4rem 0.7rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
@@ -259,4 +260,9 @@ select {
   border: none;
   display: block;
   cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
