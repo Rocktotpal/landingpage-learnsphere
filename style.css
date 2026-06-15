@@ -1,3 +1,7 @@
+.root {
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -76,7 +80,7 @@
 
 .btn {
   height: 2.5rem;
-  width: 7rem;
+  width: 8rem;
   border-radius: 5px;
   color: #f9faf8;
   background-color: #3882f6;
@@ -204,10 +208,45 @@
   border-radius: 10px;
 }
 
+.modal--header {
+  font-size: 2rem;
+  font-weight: 600;
+  max-width: 80%;
+  margin: 1rem auto 2rem auto;
+  line-height: 1.5;
+}
+
+.highlight {
+  /* background-image: var(--gradient-primary); */
+  background-color: #16c03584;
+  padding: 0.4rem 0.8rem;
+  transform: skewY(10deg);
+}
+
 .modal--form {
   display: grid;
   grid-template-columns: 1fr 2fr;
   margin: 2.5rem;
   align-items: center;
   gap: 2rem;
+}
+
+.modal--form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+}
+
+.modal--form label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.modal--form input,
+select {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
