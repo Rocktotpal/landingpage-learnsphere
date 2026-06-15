@@ -96,5 +96,29 @@
     <footer class="footer">
       <p>Copyright © 2026 LearnSphere. All Rights Reserved.</p>
     </footer>
+
+    <div class="modal hidden">
+      <button class="btn-close--modal">&times;</button>
+      <h1 class="modal--hader">
+        Join our web devleopment course <br />to
+        <span class="highlight">achieve your dream career</span>
+      </h1>
+      <form class="modal--form">
+        <label>First Name</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label>Email</label>
+        <input type="email" />
+        <label for="courses">Chose a course</label>
+        <select name="courses" id="course">
+          <option value="frontend">Frontend Development</option>
+          <option value="backend">Backend Development</option>
+          <option value="fullstack">Fullstack Development</option>
+        </select>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+    <script src="script.js"></script>
   </body>
 </html>
