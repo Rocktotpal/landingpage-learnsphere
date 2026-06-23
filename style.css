@@ -9,6 +9,10 @@
   font-family: Roboto, sans-serif;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 .header {
   height: 80vh;
   background-color: #1f2937;
@@ -94,6 +98,7 @@
 .section {
   height: 80vh;
   width: 100%;
+  transition: all 0.5s;
 }
 
 #section--1 {
@@ -103,6 +108,7 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  transition: all 0.5s;
 }
 
 .section--cards {
@@ -143,7 +149,7 @@
   display: block;
 }
 
-.section--3 {
+#section--3 {
   height: 60vh;
   width: 100%;
   display: flex;
