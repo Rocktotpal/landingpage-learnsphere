@@ -4,6 +4,8 @@ const modal = document.querySelector(".modal");
 const btnCloseModal = document.querySelector(".btn-close--modal");
 const btnShowModal = document.querySelectorAll(".btn-show-modal");
 const overlay = document.querySelector(".overlay");
+const nav = document.querySelector(".nav--bar");
+
 for (let i = 0; i < btnShowModal.length; i++) {
   btnShowModal[i].addEventListener("click", function () {
     modal.classList.remove("hidden");
@@ -15,3 +17,22 @@ btnCloseModal.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 });
+
+const handleHover = function (e) {
+  if (e.target.classList.contains("nav--link")) {
+    const link = e.target;
+    const siblings = e.target
+      .closest(".nav--bar")
+      .querySelectorAll(".nav--link");
+    const logo = e.target.closest(".nav--bar").querySelector("img");
+
+    siblings.forEach((el) => {
+      if (el !== link) el.style.opacity = this;
+    });
+    logo.style.opacity = this;
+  }
+};
+
+nav.addEventListener("mouseover", handleHover.bind(0.5));
+
+nav.addEventListener("mouseout", handleHover.bind(1));

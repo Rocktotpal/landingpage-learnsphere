@@ -22,12 +22,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: all 0.5s;
 }
 
 .nav--logo img {
   height: 70px;
   width: auto;
   display: block;
+  transition: all 0.4s;
 }
 
 .nav--items ul {
@@ -40,6 +42,7 @@
   text-decoration: none;
   color: #e5e7eb;
   font-size: 1.1rem;
+  transition: all 0.4s;
 }
 
 .hero--section {
